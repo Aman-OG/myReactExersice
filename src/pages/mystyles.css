@@ -1,0 +1,29 @@
+nav ul {
+    display:  flex;
+    justify-content: right;
+    margin: 10px;
+    gap: 30px;
+
+}
+
+ul li{
+    list-style: none;
+
+}
+
+h1{
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+}
+
+.contact{
+    background-color: steelblue;
+}
+.blog{
+    background-color:crimson;
+}
+.home{
+    background-color:lightsalmon
+}
