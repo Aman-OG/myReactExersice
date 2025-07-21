@@ -1,12 +1,10 @@
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
+import Users from "./pages/Users";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import './pages/mystyles.css';
-
 
 function App() {
   return (
@@ -14,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
+          <Route path="users" element={<Users />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Route>
@@ -22,10 +20,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(<App />);
-
-
 
 export default App;
